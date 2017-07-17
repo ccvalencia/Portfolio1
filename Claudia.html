@@ -61,6 +61,11 @@ function myTimer() {
    <h1 onmouseover="style.color='DeepPink'" onmouseout="style.color='White'">Contact Me</h1>
    <p style="font-family:ariel;"> @claudia.valencia@cristoreysj.org </p>
    
+scatter = vincent.Scatter(data, iter_idx='index')
+scatter.axis_titles(x='Index', y='Data Value')
+scatter.legend(title='Categories')
+scatter.colors(brew='Set2') 
+
 <script>
 
 function bigImg(x) {
