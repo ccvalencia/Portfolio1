@@ -1,32 +1,37 @@
+
 <!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-    <title>brick-appbar</title>
+    <title>brick-calendar</title>
 
     <!-- Importing Polyfill -->
     <script src="bower_components/platform/platform.js"></script>
 
     <!-- Importing Custom Elemenent -->
-    <link rel="import" href="dist/brick-appbar.local.html">
-
-    <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-      }
-    </style>
+    <link rel="import" href="dist/brick-calendar.local.html">
   </head>
   <body>
-
-    <!-- Using Custom Element -->
-    <brick-appbar>
-      <button>☰</button>
-      <h1>Title</h1>
-      <button>Done</button>
-    </brick-appbar>
-
-  </body>
-</html>
+    <article class="container">
+      <header>
+        <h1>brick-calendar</h1>
+      </header>
+      <p>Provides a simple calendar UI widget.</p>
+      <p>Note that when the API works with datestrings, while it's best to pass in "YYYY-MM-DD" ISO strings to the calendar, the <code class="prettyprint">&lt;brick-calendar&gt;</code> will also accept any string parseable by <code class="prettyprint">Date.parse()</code>. However, be aware that browser implementations of <code class="prettyprint">Date.parse()</code> may differ slightly.</p>
+      <section class="demo-wrap row">
+        <header class="col-md-12">
+          <h2>Basic usage</h2>
+        </header>
+        <div class="col-md-4 col-sm-6">
+          <figure class="demo">
+            <brick-calendar class="red"></brick-calendar>
+          </figure>
+        </div>
+        <div class="markup-wrap col-md-8 col-sm-6">
+          <h3>Markup</h3>
+          <pre class="prettyprint html">&lt;brick-calendar&gt;&lt;/brick-calendar&gt;</pre>
+        </div>
+      </section>
+      <section class="demo-wrap row">
+        <header class="col-md-12">
